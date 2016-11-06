@@ -15,11 +15,6 @@ You will need the following installed to run Spark Notebooks on Docker:
 1.  VirtualBox
 2.  Docker and docker-machine.
 
-
-
-## Quick Start
-
-
 ```
 
 ## Getting Started
@@ -28,7 +23,7 @@ You will need the following installed to run Spark Notebooks on Docker:
 
 Go to the VirtualBox download page and get select the correct download for your machine type.  
 
-https://www.virtualbox.org/wiki/Downloads
+[VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 Once downloaded double-click on the .dmg file and follow the instructions.  You should get a screen stating the install was successful.
 
@@ -40,7 +35,7 @@ If this is your first time using Docker or any of the Jupyter projects, do the f
 
 Please note the following restrictions on macs:  Docker for Mac requires macOS 10.10.3 Yosemite or newer running on a 2010 or newer Mac, with Intel’s hardware support for MMU virtualization. 
 
-1. [Install Docker] https://docs.docker.com/docker-for-mac/
+1. [Install Docker] (https://docs.docker.com/docker-for-mac/)
      From this download site select the "Stable Build" option 
 2.  Once the dmg is downloaded, double-click on it and follow the instructions.  You should get a confirmation that install was successful.
 3. Open a terminal window on your mac.
