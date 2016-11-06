@@ -38,13 +38,22 @@ Please note the following restrictions on macs:  Docker for Mac requires macOS 1
 2.  Once the dmg is downloaded, double-click on it and follow the instructions.  You should get a confirmation that install was successful.
 3. Open a terminal window on your mac.
 4. Run the following:
+
+```
     $ docker-machine ls
     NAME   ACTIVE   DRIVER   STATE   URL   SWARM   DOCKER   ERRORS
+```
 5.  If you do not see this, start the docker-machine:
+
+````
     $ docker-machine start 
     $ docker-machine ls
+````
 6   Create a virtual machine to run on.
+
+````
     $ docker-machine create --driver virtualbox default
+
 
     You will see the following:
 
@@ -53,25 +62,37 @@ Please note the following restrictions on macs:  Docker for Mac requires macOS 1
     (staging) Copying /Users/ripley/.docker/machine/cache/boot2docker.iso to      
 
    ....
+
+````
 7.  If the script hangs at the create SSH step, you may have to reboot your machine and try steps 3-6 again.
 8.  Verify you machine is running:
+````
     $ docker-machine ls
     NAME      ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER   ERRORS
     default   *        virtualbox   Running   tcp://192.168.99.187:2376
+````
 9.  You need to connect your terminal to docker's environment:
 
+````
    $ docker-machine env default
+
     export DOCKER_TLS_VERIFY="1"
     export DOCKER_HOST="tcp://172.16.62.130:2376"
     export DOCKER_CERT_PATH="/Users/<yourusername>/.docker/machine/machines/default"
     export DOCKER_MACHINE_NAME="default"
     # Run this command to configure your shell:
     # eval "$(docker-machine env default)"
+````
 10.  # Run this command to configure your shell:
+````
       $eval "$(docker-machine env default)"
+````
 11.  You will need the ip address of this machine to start the Jupyter notebook.
+````
     $ docker-machine ip default
      192.168.99.100  (this may be different on your machine.)
+````
+
 
 ##  Now that Docker is running on VirtualBox we can pull an image and start a Spark Notebook
 
