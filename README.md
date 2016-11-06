@@ -23,6 +23,7 @@ You will need the following installed to run Spark Notebooks on Docker:
 
 Go to the VirtualBox download page and get select the correct download for your machine type.  
 
+```
 [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 Once downloaded double-click on the .dmg file and follow the instructions.  You should get a screen stating the install was successful.
@@ -30,6 +31,8 @@ Once downloaded double-click on the .dmg file and follow the instructions.  You 
 You must be running the latest VirtualBox for the docker images to run on.
 
 ###Install Docker and Docker-Machine
+
+
 
 If this is your first time using Docker or any of the Jupyter projects, do the following to get started.  We will be installing Docker on a Virtual Machine as described here:  https://docs.docker.com/machine/get-started/.  It is recommended that if you have an old version of Docker, you update using docker-machine.
 
