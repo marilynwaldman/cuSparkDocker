@@ -4,7 +4,7 @@ Project Jupyter and Docker have many out-of-the-box notebooks built for students
 
 Some of the choices are located at:
 
-https://github.com/jupyter/docker-stacks
+[https://github.com/jupyter/docker-stacks]
 
 We will demonstrate how to run the all-spark-notebook.
 
@@ -30,7 +30,7 @@ docker run -d -P jupyter/<your desired stack>
 
 Go to the VirtualBox download page and get select the correct download for your machine type.  
 
-https://www.virtualbox.org/wiki/Downloads
+[https://www.virtualbox.org/wiki/Downloads]
 
 Once downloaded double-click on the .dmg file and follow the instructions.  You should get a screen stating the install was successful.
 
