@@ -127,7 +127,7 @@ Please note the following restrictions on macs:  Docker for Mac requires macOS 1
 
 ````
 
-4.  Jupyter should appear.
+  Jupyter should appear.
 
 ##  Upload the assignment and data files for class. These are in the cuSparkDocker directory.
 
