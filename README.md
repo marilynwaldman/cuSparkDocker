@@ -1,3 +1,17 @@
+#Get this repo
+
+
+1.  Get this repository. Either clone the repo or download it into a folder named cuSparkDocker
+
+````
+    $ git clone git@github.com:marilynwaldman/cuSparkDocker.git
+
+        or
+    Download it@github.com:marilynwaldman/cuSparkDocker.git
+    $  mkdir cuSparkDocker
+    $  cd cuSparkDocker
+````
+
 # cuSparkDocker
 
 Project Jupyter and Docker have many out-of-the-box notebooks built for students in Data Science.  This is a quick start for obtaining these ready made notebooks.
@@ -100,17 +114,28 @@ Please note the following restrictions on macs:  Docker for Mac requires macOS 1
 
     https://github.com/jupyter/docker-stacks
 
-2. Follow the instructions for all-spark-notebook:
+2. Follow the instructions for all-spark-notebook.  This will pull the docker image, start the container, and start the Jupyter notebook.
 
-    docker run -d -p 8888:8888 jupyter/all-spark-notebook
+````
+    $docker run -d -p 8888:8888 jupyter/all-spark-notebook
 
-    Note you can read the README with all-spark-notebook and start your own session.
+````    
 
 3.  When this completes open a browser window and point to 
-    http://192.168.99.100:8888
+````
+    http://192.168.99.100:8888  Note you need to use the ip address from #11 above.
+
+````
 
 4.  Jupyter should appear.
 
 ##  Upload the assignment and data files for class. These are in the cuSparkDocker directory.
 
-1.  Get this repository
+1.  On the Jupyter notebook select "upload" at the top.
+2.  You will be directed to your local file system.  Go to the cuSparkDocker folder and select all files that ends in ipynb.
+    You can upload these one at a time or select them all at once.
+3.  Follow the prompts and upload them.
+4.  Upload all files that end in .txt.  These are data files we will use.
+
+
+
